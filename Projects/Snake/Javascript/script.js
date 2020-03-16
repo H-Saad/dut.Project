@@ -4,6 +4,7 @@ const scale = 10;
 var lastdirect = "Right";
 var scorei = document.getElementsByClassName("value");
 var score = 0;
+var scor = document.querySelector(".scor");
 //snake function
 function Snake(){
     this.x = 0;
@@ -36,10 +37,10 @@ function Snake(){
         this.x += this.xspeed;
         this.y += this.yspeed;
         //snake loop back when it hits corners
-        if(snake.x > canvas.width) snake.x = 0;
-        if(snake.x < 0) snake.x = canvas.width;
-        if(snake.y > canvas.height) snake.y = 0;
-        if(snake.y < 0)snake.y = canvas.height;
+        if(snake.x > canvas.width) snake.x = 10;
+        if(snake.x < 0) snake.x = canvas.width - 10;
+        if(snake.y > canvas.height) snake.y = 10;
+        if(snake.y < 0)snake.y = canvas.height - 10;
     }
     this.direct = function(keydown){
             switch(keydown){
@@ -71,7 +72,6 @@ function Snake(){
     }
     //snake eats the fruit if it passes throught it
     this.eat = function(Fruit){
-        const scor = document.querySelector(".scor");
         if(this.x === fruit.x && this.y === fruit.y){
             score ++;
             scor.textContent = score;
@@ -86,6 +86,7 @@ function Snake(){
                 this.y = 0;
                 score = 0;
                 this.tail = [];
+                scor.textContent = score;
                 return true;
             }
         }
