@@ -15,45 +15,132 @@ a{
     height: 100%;
     right: 100%;
     background-size:100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-attachment: fixed;
 }
-ul.topnav {
+.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(75, 71, 71, 0.644);
     position: fixed;
     width: 100%;
-    box-shadow: gray;
+    box-shadow: rgba(48, 46, 46, 0.849);
 }
-ul.topnav li {float: left;}
+.menu li {float: left;}
 
-ul.topnav li a {
+
+.menu li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 25px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+.menu li a:hover:not(.active) {background-color: #111;}
 
-/*ul.topnav li a.active {background-color: darkblue;}*/
-
-ul.topnav li.right {float: right;}
+.menu li.right {float: right;}
 
 @media screen and (max-width: 600px) {
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
+    .menu li.right, 
+    .menu li {float: none;}
 }
 
-.title1{
-	text-align: center;
-	color: white;
-	font-family: verdana;
-	font-size: 35px;
-	text-transform: center;
-	padding: 32%;
+.page1 img{
+    width: 24%;
+    height: 30%;
+    padding-top: 13%;
+    padding-left: 40%;
+    
+}
+.page1 p{
+    color: black;
+    text-align: center; 
+    font-family: verdana;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 40%;
+    padding-right: 35%;
+}
+/*------------------------GAME------------------------------*/
+.game{
+	background-image: url(../imgs/pageX.jpg);
+	height: 100%;
+    right: 100%;
+    background-size:100% 100%;
+}
+.game h1{
+    color: white;
+    text-align: center; 
+    font-family: verdana;
+    font-size: 40px;
+    padding-top: 60px;
+    
+}
+.game img{
+    height: 300px;
+    width: 300px;
+}
+.game div{
+    display: inline-block;
+    margin-left: 85px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+/*-----------------------------------contact-------------------------------------*/
+.contact{
+    background-image:url(../imgs/page.jpg);
+    height: 100%;
+    width: 100%;
+	background-size:100% 100%;
+    background-attachment: fixed;
+}
+.contact hr{
+    color: brown;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.contact h1{
+    color: white;
+    text-align: center; 
+    font-family: verdana;
+    font-size: 40px;
+    padding-top: 70px;
+    
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: darkviolet;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: blueviolet;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
