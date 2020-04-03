@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+    right: 100%;
+    background-image: url(../../imgs/page2.jpg);
+    background-size:100% 100%;
+  }
+a{    
+    color:white;
+    text-decoration: none;
+    }
+
+.menu {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(75, 71, 71, 0.644);
+    position: fixed;
+    width: 100%;
+    height: 7%;
+}
+.menu li {float: left;}
+
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.menu li a:hover:not(.active) {background-color: #111;}
+
+.menu li.right {
+    float: right;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .menu li.right, 
+    .menu li {float: none;}
+}
+.submemu1{
+    display: none;
+  }
+.menu a:hover .submemu1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(75, 71, 71, 0.644);
+    position: fixed;
+    width: 100%;
+    box-shadow: rgba(48, 46, 46, 0.849);
+  }
+.menu a:hover .submemu1 ul li{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  iframe{
+    float: right;
+    width: 78%;
+    height: 92%;
+    margin-top: 3.5%;
+}
+
+.game{
+	height: 100%;
+    width: 10%;
+    
+}
+.game h1{
+    color: white;
+    text-align: center; 
+    font-family: verdana;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-left: 71%;
+    
+}
+.game img{
+    border-radius: 18px;
+    height: 175px;
+    width: 200px;
+}
+.game div{
+    margin-left: 50%;
+    margin-top: 1%;
+    margin-bottom: 30%;
+    width: 15%;
+    height: 15%;
+}
+

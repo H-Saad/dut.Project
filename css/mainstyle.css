@@ -19,13 +19,11 @@ a{
 }
 .menu {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: rgba(75, 71, 71, 0.644);
     position: fixed;
     width: 100%;
-    box-shadow: rgba(48, 46, 46, 0.849);
+    height: 7%;
 }
 .menu li {float: left;}
 
@@ -47,12 +45,36 @@ a{
 
 .menu li a:hover:not(.active) {background-color: #111;}
 
-.menu li.right {float: right;}
+.menu li.right {
+    float: right;
+    padding-right: 20px;
+}
 
 @media screen and (max-width: 600px) {
     .menu li.right, 
     .menu li {float: none;}
 }
+.submemu1{
+    display: none;
+  }
+.menu a:hover .submemu1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(75, 71, 71, 0.644);
+    position: fixed;
+    width: 100%;
+    box-shadow: rgba(48, 46, 46, 0.849);
+  }
+.menu a:hover .submemu1 ul li{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
 
 .page1 img{
     width: 24%;
@@ -72,7 +94,7 @@ a{
 }
 /*------------------------GAME------------------------------*/
 .game{
-	background-image: url(../imgs/pageX.jpg);
+	background-image: url(../imgs/pageY.jpg);
 	height: 100%;
     right: 100%;
     background-size:100% 100%;
@@ -86,15 +108,20 @@ a{
     
 }
 .game img{
+    border-radius: 18px;
     height: 300px;
     width: 300px;
 }
 .game div{
     display: inline-block;
-    margin-left: 85px;
-    margin-top: 45px;
+    border-radius: 8px;
+    margin-left: 7%;
+    margin-top: 1.5%;
     margin-bottom: 40px;
+    width: 15%;
+    height: 15%;
 }
+
 /*-----------------------------------contact-------------------------------------*/
 .contact{
     background-image:url(../imgs/page.jpg);
