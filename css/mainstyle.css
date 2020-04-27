@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 body, html {
     height: 100%;
@@ -104,22 +105,17 @@ a{
     text-align: center; 
     font-family: verdana;
     font-size: 40px;
-    padding-top: 60px;
-    
+    padding-top: 50px;
+    padding-bottom: 120px;
 }
 .game img{
-    border-radius: 18px;
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
 }
 .game div{
-    display: inline-block;
+    display: inline;
     border-radius: 8px;
     margin-left: 7%;
-    margin-top: 1.5%;
-    margin-bottom: 40px;
-    width: 15%;
-    height: 15%;
 }
 
 /*-----------------------------------contact-------------------------------------*/
