@@ -1,0 +1,31 @@
+<html>
+<head>
+    <style>
+        #score{
+            display: inline-block;
+            color:wheat;
+        }
+        div{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+            color:wheat;
+            
+        }
+        canvas{
+            display: block;
+            margin:0 auto;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <div>
+        Score : <div id="score">0</div>
+    </div>
+    <script src="tetrominoes.js"></script>
+    <script src="tetris.js"></script>
+</body>
+</html>

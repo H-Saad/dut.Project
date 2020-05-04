@@ -109,29 +109,39 @@ a{
     padding-bottom: 120px;
 }
 .game img{
-    height: 200px;
-    width: 200px;
+    border-radius: 18px;
+    height: 200%;
+    width: 120%;
 }
 .game div{
-    display: inline;
+    display: inline-block;
     border-radius: 8px;
     margin-left: 7%;
+    margin-top: 1.5%;
+    margin-bottom: 40px;
+    width: 15%;
+    height: 15%;
+}
+.game a:hover img {
+    border-radius: 18px;
+    height: 203%;
+    width: 123%;
 }
 
 /*-----------------------------------contact-------------------------------------*/
-.contact{
+.contactx{
     background-image:url(../imgs/page.jpg);
     height: 100%;
     width: 100%;
 	background-size:100% 100%;
     background-attachment: fixed;
 }
-.contact hr{
+.contactx hr{
     color: brown;
     margin-left: 30%;
     margin-right: 30%;
 }
-.contact h1{
+.contactx h1{
     color: white;
     text-align: center; 
     font-family: verdana;
@@ -150,7 +160,7 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 input[type=submit] {
-    background-color: darkviolet;
+    background-color: rgb(148, 1, 211);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -166,4 +176,14 @@ input[type=submit]:hover {
     padding: 20px;
     margin-left: 20%;
     margin-right: 20%;
+}
+/*-------------------------footer----------------------------------*/
+
+.footer-bottom{
+    color: #686868;
+    background: #343040;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
 }

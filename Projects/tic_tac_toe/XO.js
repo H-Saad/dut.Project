@@ -22,8 +22,8 @@ function nextMove(square) {
     } else if (square.innerText == "") {
         square.innerText = document.turn;
         switchTurn();
-    } else {
-        setMessage("That square is already used.");
+        } else {
+            setMessage("That square is already used.");
     }
 }
 
