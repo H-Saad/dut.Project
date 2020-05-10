@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>GAMEZONE</title>
+    <link rel="icon" href="../imgs/game.png">
+    <meta charset="utf-8">
+    <link href="css/blog-home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+    <div class="menu-area">
+        <ul class="menu">
+            <li class="log"><a href="../index.html#Home" style="padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;"><img src="../imgs/game.png" class="logo"></a></li>
+            <li><a href="../index.html#Home"><i class="fa fa-home"></i>  Home</a></li>
+            <li><a href="../index.html#game"><i class="fa fa-gamepad" aria-hidden="true"></i>  Games</a>
+                <ul class="dropdown">
+                    <li><a href="../frames/iframe-snake.html">Snake</a></li>
+                    <li><a href="../frames/iframe-rsp.html">Rock paper scissors</a></li>
+                    <li><a href="../frames/iframe-xo.html">Tic Tac Toe</a></li>
+                    <li><a href="../frames/iframe-alien-invasion.html">Space Invader</a></li>
+                    <li><a href="../frames/iframe-flappybird.html">Flappy Bird</a></li>
+                    <li><a href="../frames/iframe-tetris.html">Tetris</a></li>
+                    <li><a href="../frames/iframe-ping-pong.html">Ping Pong</a></li>
+                </ul>
+            </li>
+            <li><a href="../blog/index.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>   News</a></li>
+
+            <li><a href="../index.html#contact"><i class="fa fa-commenting-o"></i>  Contact</a></li>
+            <li class="abt"><a href="../index.html">About</a></li>
+        </ul>
+    </div>
+
+    <div class="header" style="padding-top: 72px;">
+      <h2>GAMEZONE NEWS</h2>
+    </div>
+    
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Snowrunner, le jeu qui en a sous la pédale</h2>
+          <h5> <i class="fa fa-calendar" aria-hidden="true"></i>  4 mai 2020</h5>
+          <div class="fakeimg" style="height:200px;width: 95%;"><img src="img/1.jpg" ></div>
+          <p>Après le très bon Spintires MudRunner sorti fin 2017, Saber Interactive (au développement) et Focus Home Interactive (à l’édition) ont.</p>
+        </div>
+        <div class="card">
+          <h2>Daymare 1998, simple hommage ou jeu à part entière ?</h2>
+          <h5> <i class="fa fa-calendar" aria-hidden="true"></i>  3 mai 2020</h5>
+          <div class="fakeimg" style="height:200px;width: 95%;"><img src="img/2.jpg" ></div>
+          <p>Daymare 1998 est un survival-horror que nous attendions avec une certaines impatience. Tout d’abord parce que nous adorons ce genre.</p>
+        </div>
+        <div class="card">
+          <h2>Final Fantasy VII Remake, une relecture grandiose mais imparfaite</h2>
+          <h5> <i class="fa fa-calendar" aria-hidden="true"></i>  28 avril 2020</h5>
+          <div class="fakeimg" style="height:200px;width: 95%;"><img src="img/3.jpg" ></div>
+          <p>Il y a des tests qui sont plus difficiles à appréhender que d’autres. Lorsque les joueurs parlent d’ œuvres cultes.</p>
+        </div>
+        <div class="card">
+          <h2>Et si Super Mario Sunshine arrivait sur Nintendo Switch ? On revient sur ce jeu culte</h2>
+          <h5> <i class="fa fa-calendar" aria-hidden="true"></i>   28 avril 2020</h5>
+          <div class="fakeimg" style="height:200px;width: 95%;"><img src="img/4.jpg" ></div>
+          <p>Nintendo a clairement le vent en poupe ces derniers mois, et la sortie d’Animal Crossing New Horizons ne fait.</p>
+        </div>
+        <div class="card">
+          <h2>Resident Evil Rebirth : le remake qui a mis tout le monde d’accord</h2>
+          <h5> <i class="fa fa-calendar" aria-hidden="true"></i>   27 avril 2020</h5>
+          <div class="fakeimg" style="height:200px;width: 95%;"><img src="img/5.jpg" ></div>
+          <p>Nous sommes en pleine période remake/portage/reboot. Certains râlent de voir leur jeu favori une énième fois adapté, d’autres sont ravis.</p>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="fakeimg" style="height:100px;">Image</div>
+          <p>blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla</p>
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="fakeimg">Image</div><br>
+          <div class="fakeimg">Image</div><br>
+          <div class="fakeimg">Image</div>
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>Some text..</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="myDIV" style="padding-top: 70px;padding-bottom: 20px;padding-left: 45%;">
+        <a href="index.html"><button class="btn">1</button></a>
+        <a href="page2.html"><button class="btn active">2</button></a>
+        <a href="page3.html"><button class="btn">3</button></a>
+        <a href="page4.html"><button class="btn">4</button></a>
+        <a href="page5.html"><button class="btn">5</button></a>
+    </div>
+
+    <div class="nextpage" style="padding-bottom: 70px;padding-left: 45%;">
+      <a href="index.html" class="previous">&laquo; Previous</a>
+      <a href="page3.html" class="next">Next &raquo;</a>
+    </div>
+
+    <script>
+      var header = document.getElementById("myDIV");
+      var btns = header.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+    </script>
+
+    <div class="footer-bottom">
+      &copy;GAMEZONE.com 
+    </div>
+
+  </body>
+
+</html>
