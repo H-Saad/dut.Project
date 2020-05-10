@@ -1,0 +1,34 @@
+<html>
+	<head>
+        <link rel="stylesheet" type="text/css" href="XO.css">
+        <script type="text/javascript" src="XO.js" ></script>
+		
+	</head>
+
+    <body onload="startGame();">
+        <center>
+		<h1>Welcome to my Tic-Tac-Toe game!</h1>
+		
+		<div id="message">messages will go here</div>
+		
+		<table border="10">
+			<tr>
+				<td id="p1" class="Square" onclick="nextMove(this);"></td>
+				<td id="p2" class="Square" onclick="nextMove(this);"></td>
+				<td id="p3" class="Square" onclick="nextMove(this);"></td>
+			</tr>
+			<tr>
+				<td id="p4" class="Square" onclick="nextMove(this);"></td>
+				<td id="p5" class="Square" onclick="nextMove(this);"></td>
+				<td id="p6" class="Square" onclick="nextMove(this);"></td>
+			</tr>
+			<tr>
+				<td id="p7" class="Square" onclick="nextMove(this);"></td>
+				<td id="p8" class="Square" onclick="nextMove(this);"></td>
+				<td id="p9" class="Square" onclick="nextMove(this);"></td>
+			</tr>
+		</table>
+        <a href="javascript:startGame();">Start Over</a>
+    </center>
+	</body>
+</html>

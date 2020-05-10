@@ -18,25 +18,7 @@ a{
     background-size:100% 100%;
     background-attachment: fixed;
 }
-.menu {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: rgba(75, 71, 71, 0.644);
-    position: fixed;
-    width: 100%;
-    height: 7%;
-}
-.menu li {float: left;}
 
-
-.menu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 25px;
-}
 .logo{
     height: 50px;
     width: 50px;
@@ -44,39 +26,134 @@ a{
     padding-right: 8px;
 }
 
-.menu li a:hover:not(.active) {background-color: #111;}
-
-.menu li.right {
-    float: right;
-    padding-right: 20px;
-}
-
 @media screen and (max-width: 600px) {
     .menu li.right, 
     .menu li {float: none;}
 }
-.submemu1{
-    display: none;
-  }
-.menu a:hover .submemu1{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(75, 71, 71, 0.644);
+/*----------------------------------menu--------------------------------------*/
+
+.menu-area ul{
+    list-style: none;
+}
+.menu{
+    width: 100%;
+    background: rgba(75, 71, 71, 0.644);
+}
+.menu-area{
+    display: inline-block;
+    text-align: center;
     position: fixed;
     width: 100%;
-    box-shadow: rgba(48, 46, 46, 0.849);
-  }
-.menu a:hover .submemu1 ul li{
+}
+.menu-area li.abt{
+    float: right;
+    width: 100px;
+}
+.menu-area li:hover{
+    background-color: #111;
+}
+.menu-area > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    color: #fff;
+}
+.menu-area > ul > li{
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    width: 200px;
+    height: 55px;
+    line-height: 52px;
+    float: left;
+}
+.menu-area > ul > li.log{
+    width: 100px;
+}
+.menu-area > ul > li.log:hover{
+    background: none;
+}
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+.dropdown li{
+    background: rgba(75, 71, 71, 0.644);
+    display: none;
+}
+.dropdown li:hover{
+    background: #111;
+}
+.menu-area li:hover > .dropdown li{
     display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 25px;
-  }
+}
 
+/*----------------------------------------------------------------------------*/
+
+/*----------------------------dropdown animation------------------------------*/
+
+.menu-area li:hover > .dropdown{
+    perspective: 1000px;
+}
+.menu-area li:hover > .dropdown li{
+    transform-origin: top center;
+    opacity: 0;
+}
+.menu-area li:hover > .dropdown li:nth-child(1){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: -150ms;
+
+}
+.menu-area li:hover > .dropdown li:nth-child(2){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 0ms;
+
+}
+.menu-area li:hover > .dropdown li:nth-child(3){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 150ms;
+
+}
+.menu-area li:hover > .dropdown li:nth-child(4){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 300ms;
+
+}
+.menu-area li:hover > .dropdown li:nth-child(5){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 450ms;
+
+}
+.menu-area li:hover > .dropdown li:nth-child(6){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 600ms;
+
+}
+.menu-area li:hover > .dropdown li:nth-child(7){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 750ms;
+
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    50%{
+        transform: rotateX(20deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+/*----------------------------------------------------------------------------*/
 .page1 img{
     width: 24%;
     height: 30%;
@@ -110,8 +187,8 @@ a{
 }
 .game img{
     border-radius: 18px;
-    height: 200%;
-    width: 120%;
+    height: 200px;
+    width: 200px;
 }
 .game div{
     display: inline-block;
@@ -124,8 +201,9 @@ a{
 }
 .game a:hover img {
     border-radius: 18px;
-    height: 203%;
-    width: 123%;
+    height: 250px;
+    width: 250px;
+    transition: ease 500ms;
 }
 
 /*-----------------------------------contact-------------------------------------*/

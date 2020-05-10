@@ -6,17 +6,26 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/mainstyle.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript" src="js/index.js" ></script>
     </head>
 
     <body>
-        <div class="" >
+        <div class="menu-area">
             <ul class="menu">
-                <li><a href="#Home" style="padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;"><img src="imgs/game.png" class="logo"></a></li>
+                <li class="log"><a href="#Home" style="padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;"><img src="imgs/game.png" class="logo"></a></li>
                 <li><a href="#Home"><i class="fa fa-home"></i>  Home</a></li>
-                <li><a href="#game"><i class="fa fa-gamepad" aria-hidden="true"></i>  Games</a></li>
-                <li><a href="#contact"><i class="fa fa-commenting-o" aria-hidden="true"></i>  Contact</a></li>
-                <li class="right"><a href="index.html">About</a></li>
+                <li><a href="#game"><i class="fa fa-gamepad" aria-hidden="true"></i>  Games</a>
+                    <ul class="dropdown">
+                        <li><a href="frames/iframe-snake.html">Snake</a></li>
+                        <li><a href="frames/iframe-rsp.html">Rock paper scissors</a></li>
+                        <li><a href="frames/iframe-xo.html">Tic Tac Toe</a></li>
+                        <li><a href="frames/iframe-alien-invasion.html">Space Invader</a></li>
+                        <li><a href="frames/iframe-flappybird.html">Flappy Bird</a></li>
+                        <li><a href="frames/iframe-tetris.html">Tetris</a></li>
+                        <li><a href="frames/iframe-ping-pong.html">Ping Pong</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact"><i class="fa fa-commenting-o"></i>  Contact</a></li>
+                <li class="abt"><a href="index.html">About</a></li>
             </ul>
         </div>
 
@@ -28,38 +37,38 @@
         <header id="game" class="game">
             <h1>Our Games :</h1>
     		<div class="game-snake">
-    			<a href="GAME/iframe-snake.html">
+    			<a href="frames/iframe-snake.html">
     				<img src="imgs/game-snake.jpg">
     			</a>
     		</div>
     		<div class="game-xo">
-    			<a href="GAME/iframe-xo.html">
+    			<a href="frames/iframe-xo.html">
     				<img src="imgs/game-xo.png">
     			</a>
     		</div>
     		<div class="game-rps">
-    			<a href="GAME/iframe-rsp.html">
+    			<a href="frames/iframe-rsp.html">
     				<img src="imgs/game-rps.png">
     			</a>
     		</div>
     		<div class="game-flappybird">
-    			<a href="GAME/iframe-flappybird.html">
+    			<a href="frames/iframe-flappybird.html">
     				<img src="imgs/game-flappybird.png">
     			</a>
     		</div>
     		<div class="game-tetris">
-    			<a href="GAME/iframe-tetris.html">
+    			<a href="frames/iframe-tetris.html">
     				<img src="imgs/game-tetris.png">
     			</a>
             </div>
             
             <div class="game-ping-pong">
-    			<a href="GAME/iframe-ping-pong.html">
+    			<a href="frames/iframe-ping-pong.html">
     				<img src="imgs/game-ping-pong.png">
     			</a>
     		</div>
            <div class="game-alien-Invasion">
-    			<a href="GAME/iframe-alien-invasion.html">
+    			<a href="frames/iframe-alien-invasion.html">
     				<img src="imgs/game-alien-Invasion.png">
     			</a>
     		<!-- </div>
@@ -74,7 +83,7 @@
         
         
         <header id="contact" class="contactx">
-            <h1>CONTACT</h1><br>
+            <h1>CONTACT US!</h1><br>
             <hr><br>
             <div class="container">
                 <form>

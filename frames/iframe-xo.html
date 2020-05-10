@@ -2,30 +2,32 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>ZOONGAME</title>
+        <title>Tic Tac Toe</title>
         <link rel="icon" href="../imgs/game.png">
         <link rel="stylesheet" href="css/ifram.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <ul class="menu">
-            <li><a href="../index.html#Home" style="padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;"><img src="../imgs/game.png" class="logo"></a></li>
-            <li><a href="../index.html#Home"><i class="fa fa-home"></i>  Home</a></li>
-            <li><a href="../index.html#game"><i class="fa fa-gamepad" aria-hidden="true"></i>   Game</a>
-                <div class="submemu1">
-                    <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+        <div class="menu-area">
+            <ul class="menu">
+                <li class="log"><a href="../index.html#Home" style="padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;"><img src="../imgs/game.png" class="logo"></a></li>
+                <li><a href="../index.html#Home"><i class="fa fa-home"></i>  Home</a></li>
+                <li><a href="../index.html#game"><i class="fa fa-gamepad" aria-hidden="true"></i>  Games</a>
+                    <ul class="dropdown">
+                        <li><a href="../frames/iframe-snake.html">Snake</a></li>
+                        <li><a href="../frames/iframe-rsp.html">Rock paper scissors</a></li>
+                        <li><a href="../frames/iframe-xo.html">Tic Tac Toe</a></li>
+                        <li><a href="../frames/iframe-alien-invasion.html">Space Invader</a></li>
+                        <li><a href="../frames/iframe-flappybird.html">Flappy Bird</a></li>
+                        <li><a href="../frames/iframe-tetris.html">Tetris</a></li>
+                        <li><a href="../frames/iframe-ping-pong.html">Ping Pong</a></li>
                     </ul>
-                </div>
-            </li>
-            <li><a href="../index.html#contact"><i class="fa fa-commenting-o" aria-hidden="true"></i>  Contact</a></li>
-            <li class="right"><a href="../index.html">About</a></li>
-        </ul>
-            <iframe src="../Projects/tic_tac_toe/XO.html"></iframe>
+                </li>
+                <li><a href="#contact"><i class="fa fa-commenting-o"></i>  Contact</a></li>
+                <li class="abt"><a href="index.html">About</a></li>
+            </ul>
+        </div>
+            <iframe src="../js/tic_tac_toe/XO.html"></iframe>
 
         <div class="game">
             <h1>GAME</h1>
