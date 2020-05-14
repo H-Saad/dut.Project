@@ -15,9 +15,11 @@ a{
 .wlcm{
     padding-top: 5%;
     padding-bottom: 0;
+    margin-left: 39%;
     text-align: center;
     height: 5px;
     transform: translate(2%,100%);
+    width: 25%;
 }
 
 .page1{

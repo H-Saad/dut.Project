@@ -1,6 +1,6 @@
 /* Temporary variable that sets browser storage default game object*/
 var temp = [
-    {id: 0, name: "Snake", clicks: 5},
+    {id: 0, name: "Snake", clicks: 0},
     {id: 1, name: "Rock Paper Scissors", clicks: 0},
     {id: 2, name: "Tetris", clicks: 0},
     {id: 3, name: "Flappy Bird", clicks: 0},
