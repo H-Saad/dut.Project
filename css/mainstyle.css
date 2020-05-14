@@ -11,6 +11,15 @@ a{
     color:white;
     text-decoration: none;
     }
+
+.wlcm{
+    padding-top: 5%;
+    padding-bottom: 0;
+    text-align: center;
+    height: 5px;
+    transform: translate(2%,100%);
+}
+
 .page1{
     background-image: url(../imgs/page1.jpg);
     height: 100%;
@@ -24,6 +33,7 @@ a{
     width: 50px;
     padding-left: 8px;
     padding-right: 8px;
+    align-items: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -203,7 +213,7 @@ a{
     border-radius: 18px;
     height: 250px;
     width: 250px;
-    transition: ease 500ms;
+    transition: ease-in 500ms;
 }
 
 /*-----------------------------------contact-------------------------------------*/

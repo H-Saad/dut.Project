@@ -15,63 +15,67 @@
                 <li><a href="#Home"><i class="fa fa-home"></i>  Home</a></li>
                 <li><a href="#game"><i class="fa fa-gamepad" aria-hidden="true"></i>  Games</a>
                     <ul class="dropdown">
-                        <li><a href="frames/iframe-snake.html">Snake</a></li>
-                        <li><a href="frames/iframe-rsp.html">Rock paper scissors</a></li>
-                        <li><a href="frames/iframe-xo.html">Tic Tac Toe</a></li>
-                        <li><a href="frames/iframe-alien-invasion.html">Space Invader</a></li>
-                        <li><a href="frames/iframe-flappybird.html">Flappy Bird</a></li>
-                        <li><a href="frames/iframe-tetris.html">Tetris</a></li>
-                        <li><a href="frames/iframe-ping-pong.html">Ping Pong</a></li>
+                        <li><a href="frames/iframe-snake.html" onclick="increment_main(0)">Snake</a></li>
+                        <li><a href="frames/iframe-rsp.html" onclick="increment_main(1)">Rock paper scissors</a></li>
+                        <li><a href="frames/iframe-xo.html" onclick="increment_main(4)">Tic Tac Toe</a></li>
+                        <li><a href="frames/iframe-alien-invasion.html" onclick="increment_main(5)">Space Invader</a></li>
+                        <li><a href="frames/iframe-flappybird.html" onclick="increment_main(3)">Flappy Bird</a></li>
+                        <li><a href="frames/iframe-tetris.html" onclick="increment_main(2)">Tetris</a></li>
+                        <li><a href="frames/iframe-ping-pong.html" onclick="increment_main(6)">Ping Pong</a></li>
                     </ul>
                 </li>
                 <li><a href="blog/index.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>   News</a></li>
 
                 <li><a href="#contact"><i class="fa fa-commenting-o"></i>  Contact</a></li>
+                <li class="abt"><a href="index.html" onclick="localStorage.clear();">Log Out</a></li>
                 <li class="abt"><a href="index.html">About</a></li>
             </ul>
         </div>
 
         <header class="page1" id="Home">
+            <div class="wlcm">
+                <h1>Welcome <span class="username"></span> !</h1>
+            </div>
             <img src="imgs/LOGO.png">
-            <p>The goal of our website is to feature one of the most nostalgic retro games that are recoded by our team to bring you the best experience and make you travel back to your youth moments!</p>
+            <p>Welcome to this website designed by our team to offer you a pleasant experience playing one of the most iconic retro games!</p>
         </header>
 
         <header id="game" class="game">
             <h1>Our Games :</h1>
     		<div class="game-snake">
-    			<a href="frames/iframe-snake.html">
-    				<img src="imgs/game-snake.jpg">
+    			<a href="frames/iframe-snake.html" onclick="increment_main(0)">
+    				<img src="imgs/Snake.png">
     			</a>
     		</div>
     		<div class="game-xo">
-    			<a href="frames/iframe-xo.html">
-    				<img src="imgs/game-xo.png">
+    			<a href="frames/iframe-xo.html" onclick="increment_main(4)">
+    				<img src="imgs/Tic Tac Toe.png">
     			</a>
     		</div>
     		<div class="game-rps">
-    			<a href="frames/iframe-rsp.html">
-    				<img src="imgs/game-rps.png">
+    			<a href="frames/iframe-rsp.html" onclick="increment_main(1)">
+    				<img src="imgs/Rock Paper Scissors.png">
     			</a>
     		</div>
     		<div class="game-flappybird">
-    			<a href="frames/iframe-flappybird.html">
-    				<img src="imgs/game-flappybird.png">
+    			<a href="frames/iframe-flappybird.html" onclick="increment_main(3)">
+    				<img src="imgs/Flappy Bird.png">
     			</a>
     		</div>
     		<div class="game-tetris">
-    			<a href="frames/iframe-tetris.html">
-    				<img src="imgs/game-tetris.png">
+    			<a href="frames/iframe-tetris.html" onclick="increment_main(2)">
+    				<img src="imgs/Tetris.png">
     			</a>
             </div>
             
             <div class="game-ping-pong">
-    			<a href="frames/iframe-ping-pong.html">
-    				<img src="imgs/game-ping-pong.png">
+    			<a href="frames/iframe-ping-pong.html" onclick="increment_main(6)">
+    				<img src="imgs/Ping Pong.png">
     			</a>
     		</div>
            <div class="game-alien-Invasion">
-    			<a href="frames/iframe-alien-invasion.html">
-    				<img src="imgs/game-alien-Invasion.png">
+    			<a href="frames/iframe-alien-invasion.html" onclick="increment_main(5)">
+    				<img src="imgs/Space Invader.png">
     			</a>
     		<!-- </div>
             <div class="game8">
@@ -111,6 +115,20 @@
           <div class="footer-bottom">
             &copy;GAMEZONE.com 
           </div>
+    <script src="js/click_counter_main.js"></script>
+    <script>
+        function wlcm_msg(){
+            name_text = document.querySelector(".username");
+            if(window.localStorage.getItem('username') === null){
+            var msg = window.prompt("Enter your username please.");
+            window.localStorage.setItem('username',msg);
+            }
+            else{
+            var msg = window.localStorage.getItem('username');}
+            name_text.textContent = msg;
+        }
+        wlcm_msg();
+    </script>
         
     </body>
 </html>

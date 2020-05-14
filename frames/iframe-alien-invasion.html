@@ -14,13 +14,13 @@
                 <li><a href="../index.html#Home"><i class="fa fa-home"></i>  Home</a></li>
                 <li><a href="../index.html#game"><i class="fa fa-gamepad" aria-hidden="true"></i>  Games</a>
                     <ul class="dropdown">
-                        <li><a href="../frames/iframe-snake.html">Snake</a></li>
-                        <li><a href="../frames/iframe-rsp.html">Rock paper scissors</a></li>
-                        <li><a href="../frames/iframe-xo.html">Tic Tac Toe</a></li>
-                        <li><a href="../frames/iframe-alien-invasion.html">Space Invader</a></li>
-                        <li><a href="../frames/iframe-flappybird.html">Flappy Bird</a></li>
-                        <li><a href="../frames/iframe-tetris.html">Tetris</a></li>
-                        <li><a href="../frames/iframe-ping-pong.html">Ping Pong</a></li>
+                        <li><a href="../frames/iframe-snake.html" onclick="increment_frames(0)">Snake</a></li>
+                        <li><a href="../frames/iframe-rsp.html" onclick="increment_frames(1)">Rock paper scissors</a></li>
+                        <li><a href="../frames/iframe-xo.html" onclick="increment_frames(4)">Tic Tac Toe</a></li>
+                        <li><a href="../frames/iframe-alien-invasion.html" onclick="increment_frames(5)">Space Invader</a></li>
+                        <li><a href="../frames/iframe-flappybird.html" onclick="increment_frames(3)">Flappy Bird</a></li>
+                        <li><a href="../frames/iframe-tetris.html" onclick="increment_frames(2)">Tetris</a></li>
+                        <li><a href="../frames/iframe-ping-pong.html" onclick="increment_frames(6)">Ping Pong</a></li>
                     </ul>
                 </li>
                 <li><a href="../blog/index.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>   News</a></li>
@@ -31,29 +31,25 @@
         <iframe src="../js/Alien-invasion/index.html"></iframe>
 
         <div class="game">
-            <h1>GAME</h1>
-            <div class="game-rps">
-                <a href="iframe-rsp.html">
-                    <img src="../imgs/game-rps.png">
+            <h1>Most played games !</h1>
+            <div class="first_game">
+                    <img src="../imgs/Snake.png">
                 </a>
             </div>
-            <div class="game-snake">
-                <a href="iframe-snake.html">
-                    <img src="../imgs/game-snake.jpg">
+            <div class="second_game">
+                    <img src="../imgs/Rock Paper Scissors.png">
                 </a>
             </div>
-            <div class="game-flappybird">
-                <a href="iframe-flappybird.html">
-                    <img src="../imgs/game-flappybird.png">
+            <div class="third_game">
+                    <img src="../imgs/Tetris.png">
                 </a>
             </div>
-            <div class="game-alien-Invasion">
-                <a href="iframe-alien-invasion.html">
-                    <img src="../imgs/game-alien-Invasion.png">
+            <div class="fourth_game">
+                    <img src="../imgs/Ping Pong.png">
                 </a>
             </div>
         </div>
-        
-        
+     <script src="../js/click_counter_frames.js">
+    </script>
     </body>
 </html>

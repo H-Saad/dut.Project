@@ -163,15 +163,24 @@ iframe{
     color: white;
     text-align: center; 
     font-family: verdana;
-    font-size: 40px;
+    font-size: 30px;
+    width: 200%;
     padding-top: 60px;
-    padding-left: 71%;
+    padding-right: 15px;
+    padding-left: 10px;
+    padding-bottom: 25px;
     
 }
 .game img{
     border-radius: 18px;
+    height: 150px;
+    width: 150px;
+}
+.game img:hover {
+    border-radius: 18px;
     height: 175px;
-    width: 200px;
+    width: 175px;
+    transition: ease-in 250ms;
 }
 .game div{
     margin-left: 50%;
