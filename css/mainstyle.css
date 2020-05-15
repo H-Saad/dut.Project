@@ -219,7 +219,7 @@ a{
 }
 
 /*-----------------------------------contact-------------------------------------*/
-.contactx{
+#contact{
     background-image:url(../imgs/page.jpg);
     height: 100%;
     width: 100%;
@@ -261,12 +261,35 @@ input[type=submit]:hover {
     background-color: blueviolet;
 }
 .container {
-    border-radius: 5px;
+    border-radius: 30px;
     background-color: #f2f2f2;
     padding: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 24%;
+    width: 50%;
 }
+#contact th, td {
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    border-radius: 40px;
+  }
+#contact th, td {
+    padding: 15px;
+    text-align: center;
+    color: #5805a6;
+  }
+
+.contactx div {
+    display: inline-block;
+    
+}
+.table{
+    float: right;
+    padding-right: 5%;
+    padding-top: 4%;
+}
+.table a{
+    color: #5805a6;
+}
+  
 /*-------------------------footer----------------------------------*/
 
 .footer-bottom{
