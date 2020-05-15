@@ -6,14 +6,17 @@
 body, html {
   height: 100%;
   right: 100%;
-  background: #f1f1f1;
+  background-image: url(../../imgs/pageX.jpg);
+
+  background-size:100% 100%;
+  background-attachment: fixed;
 }
 
 .header {
   padding: 30px;
   font-size: 40px;
   text-align: center;
-  background: white;
+  background: #fff;
 }
 
 a{    
@@ -178,9 +181,10 @@ a{
 
 
 .card {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.829);
   padding: 20px;
   margin-top: 20px;
+  border-radius: 20px;
 }
 .card h1,h5,p {
   padding: 15px ;
@@ -189,6 +193,7 @@ a{
 .card img {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 
@@ -218,6 +223,7 @@ a{
   background-color: #f1f1f1;
   cursor: pointer;
   font-size: 18px;
+  border-radius: 20px;
 }
 
 .active, .btn:hover {
@@ -234,16 +240,19 @@ a{
 .nextpage a:hover {
   background-color: #ddd;
   color: black;
+  border-radius: 20px;
 }
 
 .previous {
   background-color: #f1f1f1;
   color: black;
+  border-radius: 20px;
 }
 
 .next {
   background-color: #666;
   color: white;
+  border-radius: 20px;
 }
 
 .round {
