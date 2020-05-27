@@ -119,31 +119,31 @@
                         </tr>
                         <tr>
                             <td><a href="frames/iframe-snake.html" onclick="increment_main(0)">Snake</a></td>
-                            <td>15</td>
+                            <td><p class="snake">0</p></td>
                         </tr>
                         <tr>
                             <td><a href="frames/iframe-rsp.html" onclick="increment_main(1)">Rock paper scissors</a></td>
-                            <td>5</td>
+                            <td><p class="rps">0</p></td>
                         </tr>
                         <tr>
                             <td><a href="frames/iframe-xo.html" onclick="increment_main(4)">Tic Tac Toe</a></td>
-                            <td>4</td>
+                            <td><p class="xo">0</p></td>
                         </tr>
                         <tr>
                             <td><a href="frames/iframe-alien-invasion.html" onclick="increment_main(5)">Space Invader</a></td>
-                            <td>15</td>
+                            <td><p class="space">0</p></td>
                         </tr>
                         <tr>
                             <td><a href="frames/iframe-flappybird.html" onclick="increment_main(3)">Flappy Bird</a></td>
-                            <td>15</td>
+                            <td><p class="flappy">0</p></td>
                         </tr>
                         <tr>
                             <td><a href="frames/iframe-tetris.html" onclick="increment_main(2)">Tetris</a></td>
-                            <td>15</td>
+                            <td><p class="tetris">0</p></td>
                         </tr>
                         <tr>
                             <td><a href="frames/iframe-ping-pong.html" onclick="increment_main(6)">Ping Pong</a></td>
-                            <td>15</td>
+                            <td><p class="ping">0</p></td>
                         </tr>
                     </table>
                 </div>
@@ -158,12 +158,12 @@
     <script>
         function wlcm_msg(){
             name_text = document.querySelector(".username");
-            if(window.localStorage.getItem('username') === null){
+
+            if(window.localStorage.getItem('username') === "null" || window.localStorage.getItem('username') === null){
             var msg = window.prompt("Enter your username please.");
-            window.localStorage.setItem('username',msg);
-            }
-            else{
-            var msg = window.localStorage.getItem('username');}
+            window.localStorage.setItem('username',msg);}
+            
+            var msg = window.localStorage.getItem('username');
             name_text.textContent = msg;
         }
         wlcm_msg();

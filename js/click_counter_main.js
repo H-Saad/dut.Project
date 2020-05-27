@@ -30,4 +30,24 @@ increment_main = function(arg){
     games[arg].clicks++;
     save_new();
 }
+
+update_table = function(){
+    var snake = document.querySelector(".snake");
+    var rps = document.querySelector(".rps");
+    var xo = document.querySelector(".xo");
+    var space = document.querySelector(".space");
+    var flappy = document.querySelector(".flappy");
+    var tetris = document.querySelector(".tetris");
+    var ping = document.querySelector(".ping");
+    snake.textContent = games[0].clicks;
+    rps.textContent = games[1].clicks;
+    xo.textContent = games[4].clicks;
+    space.textContent = games[5].clicks;
+    flappy.textContent = games[3].clicks;
+    tetris.textContent = games[2].clicks;
+    ping.textContent = games[6].clicks;
+}
+
 save_new();
+
+update_table();
