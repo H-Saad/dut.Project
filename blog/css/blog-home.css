@@ -6,7 +6,7 @@
 body, html {
   height: 100%;
   right: 100%;
-  background-image: url(../../imgs/pageX.jpg);
+  background-image: url(../../imgs/pageB.jpg);
 
   background-size:100% 100%;
   background-attachment: fixed;
@@ -195,7 +195,14 @@ a{
   height: 100%;
   border-radius: 20px;
 }
+.card a i{
+  color: #111;
+  font-size: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
 
+}
 
 
 .row:after {
