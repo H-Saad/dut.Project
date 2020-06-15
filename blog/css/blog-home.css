@@ -16,7 +16,13 @@ body, html {
   padding: 30px;
   font-size: 40px;
   text-align: center;
-  background: #fff;
+}
+.header h2{
+  color: #ddd;
+}
+.header p{
+  color: rgb(187, 186, 186);
+  font-size:  20px;
 }
 
 a{    
