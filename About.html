@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GAMEZONE</title>
+    <link rel="icon" href="imgs/game.png">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"type="text/css" href="css/file1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="menu-area">
+        <ul class="menu">
+            <li class="log"><a href="#Home" style="padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;"><img src="imgs/game.png" class="logo"></a></li>
+            <li><a href="#Home"><i class="fa fa-home"></i>  Home</a></li>
+            <li><a href="#game"><i class="fa fa-gamepad" aria-hidden="true"></i>  Games</a>
+                <ul class="dropdown">
+                    <li><a href="frames/iframe-snake.html" onclick="increment_main(0)">Snake</a></li>
+                    <li><a href="frames/iframe-rsp.html" onclick="increment_main(1)">Rock paper scissors</a></li>
+                    <li><a href="frames/iframe-xo.html" onclick="increment_main(4)">Tic Tac Toe</a></li>
+                    <li><a href="frames/iframe-alien-invasion.html" onclick="increment_main(5)">Space Invader</a></li>
+                    <li><a href="frames/iframe-flappybird.html" onclick="increment_main(3)">Flappy Bird</a></li>
+                    <li><a href="frames/iframe-tetris.html" onclick="increment_main(2)">Tetris</a></li>
+                    <li><a href="frames/iframe-ping-pong.html" onclick="increment_main(6)">Ping Pong</a></li>
+                </ul>
+            </li>
+            <li><a href="blog/index.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>   News</a></li>
+
+            <li><a href="#contact"><i class="fa fa-commenting-o"></i>  Contact</a></li>
+            <li class="abt"><a href="index.html" onclick="localStorage.clear();">Log Out</a></li>
+            <li class="abt"><a href="About.html">About</a></li>
+        </ul>
+    </div>
+    <header id="About">
+        <section class="row">
+            <div class="col-md-3">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="imgs/team-1.png">
+                    </div>
+                    <div class="team-content">
+                        <span class="post">HADICHE Saad</span>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+                        <li><a href="https://twitter.com/" class="fa fa-twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="imgs/team-2.png">
+                    </div>
+                    <div class="team-content">
+                        <span class="post">ELHAID Oussama</span>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/elhaid.oussama" class="fa fa-facebook"></a></li>
+                        <li><a href="https://twitter.com/OussamaELHaid" class="fa fa-twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/oussama-elhaid" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="imgs/team-3.png">
+                    </div>
+                    <div class="team-content">
+                        <span class="post">frira</span>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+                        <li><a href="https://twitter.com/" class="fa fa-twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
